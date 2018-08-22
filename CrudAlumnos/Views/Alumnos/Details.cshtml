@@ -1,0 +1,82 @@
+﻿@model CrudAlumnos.Models.Alumnos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Alumnos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CGradoAlumno.IDGrado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CGradoAlumno.IDGrado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreAlumno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreAlumno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApelidoAlumno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApelidoAlumno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DireccionAlumno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DireccionAlumno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelefonoAlumno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelefonoAlumno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailAlumno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailAlumno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaIngreso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaIngreso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraIngreso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraIngreso)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_alumno }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
